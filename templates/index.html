@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .header h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .header p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border-left: 4px solid #4ca1af;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-family: 'Roboto Slab', serif;
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+
+    .card h2 i {
+      margin-right: 10px;
+      color: #4ca1af;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .form-section {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin: 2rem auto;
+    }
+
+    .form-section h2 {
+      color: #2c3e50;
+      margin-bottom: 1.2rem;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      transition: border 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4ca1af;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(76, 161, 175, 0.2);
+    }
+
+    button {
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: block;
+      width: 100%;
+      font-weight: 600;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .header p {
+        font-size: 0.9rem;
+      }
+      
+      .card {
+        padding: 1.2rem;
+      }
+      
+      .card h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Explorando Python e Web</h1>
+      <p>Conheça as possibilidades da programação Python integrada com tecnologias web</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2><i class="fas fa-code"></i> O que é Python?</h2>
+      <p>Python é uma linguagem de programação de alto nível que combina poder com simplicidade. Criada por Guido van Rossum, ela se destaca por sua sintaxe clara e legível.</p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-laptop-code"></i> Para que serve?</h2>
+      <p>Desenvolvimento web, análise de dados, inteligência artificial, automação e muito mais. Empresas como Google e Netflix usam Python em seus sistemas.</p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-briefcase"></i> Vantagens profissionais</h2>
+      <p>Muito requisitada no mercado, Python possui vasta comunidade e diversas bibliotecas prontas para uso, acelerando o desenvolvimento de soluções.</p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-cubes"></i> O que é POO?</h2>
+      <p>Programação Orientada a Objetos é um paradigma baseado em "objetos" que encapsulam dados e comportamentos. Em Python, tudo é um objeto.</p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fas fa-project-diagram"></i> Vantagens da POO</h2>
+      <p>Facilita organização do código, reutilização de componentes e manutenção de sistemas complexos através de encapsulamento e herança.</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Exemplo de integração HTML-Python</h2>
+      <form action="/resposta" method="post">
+        <div class="form-group">
+          <label for="nome">Digite seu nome:</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome aqui">
+        </div>
+        <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2023 Explorando Python</p>
+    </div>
+  </footer>
+</body>
+</html>
